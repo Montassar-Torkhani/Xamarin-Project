@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EXAMAN_TP.Profile.IsetRades"
+            NavigationPage.HasNavigationBar="False"
+            BarBackgroundColor="Black"
+            SelectedTabColor="red"
+            UnselectedTabColor="White"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            xmlns:CI="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
+    <!--Pages can be added as references or inline  -->
+    <ContentPage Title="TI" IconImageSource="it.pnj" BackgroundColor="white">
+        <Frame BackgroundColor="White" HasShadow="True">
+            <StackLayout>
+
+
+                <Label FontSize="24" Margin="0,10,0,25" Text="Technologies de l'informatique
+" TextColor="DeepSkyBlue" HorizontalOptions="Center"  FontAttributes="Bold"></Label>
+            <Label FontSize="Body" Text="Le Département des Technologies 
+                      de l'informatique a démarré en février 2003.
+                   Il regroupe des enseignants et des professionnels  à la disposition des étudiants préparant un D.E.S.T (Diplôme des Études Supérieures de Technologie) ou une Licence appliquée."  TextColor="Black" ></Label>
+
+
+                <CI:CircleImage Source="itpic4" Margin="10"  HeightRequest="130" HorizontalOptions="End" VerticalOptions="Center"   />
+
+
+
+
+                <Label Margin="0,-60,0,0"  FontSize="Medium" TextColor="Gray" 
+                   Text="Débouchés :                                                                 
+                        * Développeur d'applications,                                                                                                                                                                                                                                                                                                                                  
+                        * Développeur Web,                                                       
+                        * Administrateur réseaux et systèmes,
+                        * Informaticien d'exploitation,
+                        * Responsable d'exploitation.   " >
+                  
+                </Label>
+                    
+
+
+                <Image Source="itpic3"  HeightRequest="350" WidthRequest="350" HorizontalOptions="Center" Margin="-30"   />
+
+
+
+                <!--<Image Source="textit.jpg" Aspect="AspectFill"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>-->
+
+        </StackLayout>
+        </Frame>
+
+
+
+
+    </ContentPage>
+
+
+
+
+    <ContentPage Title="GC" IconImageSource="gcc.pnj">
+
+
+
+
+        <ContentPage.Content>
+            <!-- Main layout and Upper components-->
+            <Grid RowDefinitions="Auto,*" ColumnDefinitions="*,*">
+                <!-- Background Image-->
+                <Image Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" Aspect="AspectFill" Opacity="0.7" Source="Room"/>
+                <!-- Back Button-->
+                <Button Grid.Column="0" Grid.Row="0" CornerRadius="13" ImageSource="gcvil" BackgroundColor="White" WidthRequest="100" HeightRequest="190" Margin="25,30,0,0"  VerticalOptions="Start" HorizontalOptions="Start"/>
+                <!--Take a Tour Button-->
+                <Button Grid.Column="1" Grid.Row="0" CornerRadius="10" ImageSource="Tour" BackgroundColor="SandyBrown" Text="ISET RADES"  TextColor="White" Margin="0,30,25,0"  FontSize="20" HeightRequest="50" WidthRequest="170" VerticalOptions="Start" HorizontalOptions="EndAndExpand"/>
+
+                <Frame Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" HasShadow="False" VerticalOptions="EndAndExpand" Margin="30,50" Padding="20,0,0,20"  CornerRadius="40" HeightRequest="480">
+                    <ScrollView HorizontalScrollBarVisibility="Never">
+                        <Grid RowSpacing="20" VerticalOptions="Center" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*" Padding="10,0,15,0">
+                            <!-- Blue Band Image-->
+                            <Image Grid.Column="1" Grid.Row="0" VerticalOptions="Start" HorizontalOptions="End" HeightRequest="40" Margin="0,-7,20,0" Source="Band"/>
+                            <!-- Address-->
+                            
+                            <!-- Title-->
+                            <Label Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Text="Département Génie Civil
+" FontSize="20" FontAttributes="Bold" TextColor="#353f5f"/>
+                            <Label Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Text="Partenaires industriels :" FontSize="14" FontAttributes="Bold" TextColor="#a09fb8" VerticalOptions="Start" />
+                            <!-- Description-->
+                            <Label Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" Padding="0,10" TextColor="#969bac" LineHeight="1.5" Text="* Le groupe chimique de Tunisie
+                              * Un grand nombre d'entreprises de bâtiment 
+                                * Un grand nombre de bureaux d'études              de Génie Civil." />
+                            <!-- Olga's signature information-->
+                            <Image Grid.Column="0" Grid.Row="4" Grid.RowSpan="2" Source="gcvilpic3" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="120"/>
+                            <Label Grid.Column="1" Grid.Row="4" Text="Olga Tyinoficieva" Padding="10,0,0,0" FontAttributes="Italic" VerticalOptions="End" HorizontalOptions="Start"/>
+                            <Label Grid.Column="1" Grid.Row="5" Text="Mansouri JOMLI
+                            Directeur du Département GC" Padding="10,0,0,0" HorizontalOptions="Start" FontSize="10" FontAttributes="Bold" TextColor="Silver"/>
+                      
+                        </Grid>
+                        
+                    </ScrollView>
+                </Frame>
+            </Grid>
+        </ContentPage.Content>
+
+
+
+
+
+
+
+
+
+
+    </ContentPage>
+
+
+
+
+
+
+
+
+
+    <ContentPage Title="GE" IconImageSource="ecc.pnj" BackgroundColor="White">
+
+
+        <ScrollView>
+            <StackLayout BackgroundColor="#fbfaff" HorizontalOptions="Center" >
+
+                <!-- 1. Profile Picture-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="400"/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Source="elicpic2" HeightRequest="300" VerticalOptions="Start" Aspect="AspectFill" Margin="0,0,0,0"/>
+                    <Label Grid.Row="0" VerticalOptions="End" Padding="20,20,20,50">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Department Génie Électrique
+ &#10;" FontSize="25" FontAttributes="Bold" ForegroundColor="black" />
+                                
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Grid>
+
+                <!-- Here add the code that is being explained in the next block-->
+
+                <!-- 2. Contact information frame-->
+                <Frame CornerRadius="20" Margin="0,-50,0,0" BackgroundColor="#fbfaff" HasShadow="False" HeightRequest="19"/>
+
+                <!-- Here add the code that is being explained in the next block-->
+                <!-- It will contain blocks: 3, 4 and 5 -->
+                <Grid Margin="30,-20,30,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="210"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <!-- 3. Your balance -->
+                    <Label Grid.Row="0" Grid.Column="0" Text="Durée des études et des stages" TextColor="Silver"/>
+                    <Label Grid.Row="1" Grid.Column="0" Text="Termes de référence
+" FontAttributes="Bold" FontSize="20" TextColor="Black"/>
+                    <CI:CircleImage  Grid.Row="1" Grid.Column="0" Source="elicpic4" />
+                        <Label Grid.Row="1" Grid.Column="1" TextColor="Black" Text="Le Département de génie électrique forme des techniciens supérieurs dans tous les domaines liés aux systèmes industriels qui dépendent principalement de l'énergie électrique pour la production et la fourniture de divers services en acquérant toutes les compétences pour les programmer, les exploiter, les entretenir et les surveiller tout en assurant tous les mécanismes de sécurité au travail et le sécurité de tous les équipements et composants des systèmes électriques." HorizontalOptions="End" />
+                    <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1" Text="La durée de l'étude s'étend sur trois ans, au cours desquels il y a deux stages industriels, et tandis que le premier stage prépare l'étudiant à la vie industrielle avec ses différentes composantes et son cadre pratique et interactif, le deuxième stage lui donne l'occasion d'appliquer les théories il a acquis dans le cadre d'une étude de cas sur le développement ou l'amélioration du fonctionnement d'un système industriel. L'étudiant attend également la fin des cours du dernier semestre du cycle académique et est soumis à l'examen d'une commission spécialisée, c'est l'occasion pour l'étudiant de prouver sa valeur et l'efficacité de sa formation.La première année de formation est comme un tronc commun durant lequel l'étudiant reçoit toutes les matières de base qui lui permettent par la suite de choisir la spécialisation qu'il souhaite, quelle qu'elle soit.On cite par exemple parmi les matières de base les mathématiques, la physique, la programmation des médias , électronique, systèmes logiques et autres." TextColor="Black"/>
+                    <!-- Here add the code that is being explained in the next block-->
+                    <Image Grid.Row="3" Grid.Column="1" HorizontalOptions="End" Source="ecc"></Image>
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+
+        
+
+       
+
+    </ContentPage>
+
+
+
+
+
+
+    <ContentPage Title="GM" IconImageSource="MC.pnj" BackgroundColor="White" >
+
+
+        <!-- Main layout-->
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*,*,*">
+            <!-- 1. Profile picture-->
+            <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Source="mecpic3.png" Aspect="Fill" HeightRequest="400"/>
+
+            <!-- 2. Pet Card-->
+            <Frame Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" CornerRadius="40" HasShadow="False" Margin="20,-100,20,10" BackgroundColor="#f9f9f9" HeightRequest="100">
+                <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*,Auto" VerticalOptions="Center" HorizontalOptions="FillAndExpand" RowSpacing="10" Padding="20,5">
+                    <!-- General information-->
+                    <Label Grid.Row="0" Grid.Column="0" Text="Département Génie Mécanique
+" FontAttributes="Bold" FontSize="18" TextColor="Black"/>
+
+                    <Label Grid.Row="1" Grid.Column="0" Text="Mécanique des Fluides" TextColor="#797979" FontSize="17" />
+
+                    <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" TextColor="#acacac" TranslationX="20" VerticalTextAlignment="Center" Text="Balance hydrostatique" HorizontalOptions="Center" FontSize="15"/>
+                </Grid>
+            </Frame>
+
+            <!--3. Details -->
+
+            <!-- Rounded image-->
+            <Frame Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" BorderColor="White" HorizontalOptions="Center" WidthRequest="70" HeightRequest="70" HasShadow="False" CornerRadius="35" Padding="0" IsClippedToBounds="True">
+                <Image Source="mecpic4" Aspect="AspectFill"/>
+            </Frame>
+
+            <!-- Main name, roles and date -->
+            <Label Grid.Row="2" Grid.Column="1"  HorizontalOptions="Start" Text="Directeur de département" TextColor="Black" FontAttributes="Bold" />
+            <Label Grid.Row="2" Grid.Column="2" Text="22 laboratoires" HorizontalTextAlignment="End" TextColor="#acacac" Margin="0,30,25,0" FontSize="14"/>
+            <Label Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" Text="Mourad Ben Afia" TextColor="#acacac"/>
+
+            <!-- Description-->
+            <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="35,20,35,15" TextColor="#a5a5a5" Text="Le génie civil est l'art de concevoir et de réaliser des ouvrages d'infrastructures. Il inclut également les bâtiments lorsque ceux-ci, par leur conception structurelle ou leur architecture, ou encore leur impact sur la collectivité, sont exceptionnels."/>
+            <Button BackgroundColor="#f8b732"  Grid.Row="5"  Grid.Column="0" Grid.ColumnSpan="3" HeightRequest="400" CornerRadius="100" > </Button>
+            
+
+        </Grid>
+
+
+
+    </ContentPage>
+
+
+
+
+
+
+
+
+
+
+
+    <ContentPage IconImageSource="gs.pnj" Title="SEG"
+        BackgroundColor="White" >
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120" />
+                <RowDefinition Height="280" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+
+            <Frame Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="3" Padding="0" Margin="0,-44,0,0" HasShadow="False" CornerRadius="40">
+                <Image HeightRequest="400" Source="gsss" Aspect="AspectFill"  />
+            </Frame>
+
+          
+
+            <ScrollView Grid.Row="2" Grid.ColumnSpan="3" >
+                <Grid Padding="40,32" ColumnSpacing="12">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="48" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label TextColor="Black" Grid.ColumnSpan="2" Grid.Row="0" FontFamily="JosefinSans-Bold" FontSize="21"  Text="Sciences Economiques Et Gestion" />
+                    <Label TextColor="Black" Grid.ColumnSpan="2" Grid.Row="1"  Text="Le département sciences économiques et de gestion regroupe toutes les formations du secteur tertiaire demandées par le marché. Les profils de formation spécialisés et pointus concernent des domaines variés allant des techniques comptables et financières aux techniques de vente et de communication publicitaire en passant par la logistique et le transport international." FontSize="14" />
+
+                    <Label TextColor="Black" Grid.ColumnSpan="2" Grid.Row="2" Margin="0,0,0,24" Text="La formation s'oriente vers trois spécialités :&#10;&#10;* Gestion Comptable et Financière&#10;* Commerce et distribution&#10;* Parcours Techniques de Vente (TV)&#10;* Parcours digital marketing&#10;* Parcours Management du Commerce International&#10;* Management&#10;* Parcours Logistique&#10;* Parcours management industriel&#10;* Parcours management des affaires "/>
+
+
+                    
+
+
+
+
+
+
+
+                    <!--local:Stepper Grid.Row="2" Grid.Column="1" WidthRequest="120" HorizontalOptions="Start" Margin="0,0,0,24" /-->
+
+                    <Label  TextColor="Black" Grid.Row="3" Grid.ColumnSpan="2" Text="occuper des postes tels assistant de gestion PME, assistant en RH, contrôleur de gestion, adjoint de direction opérationnelle, assistant chef de projet, gestionnaire de centre de profit, adjoint du directeur financier. Ils sont également tout à fait formés pour créer leur propre entreprise." FontFamily="JosefinSans-Regular" FontSize="16" LineHeight="1.2" />
+                </Grid>
+            </ScrollView>
+
+            <BoxView Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="4" VerticalOptions="End" BackgroundColor="green" Margin="0,0,0,-40" HeightRequest="40" />
+
+            <Grid Grid.Row="3" Grid.ColumnSpan="3">
+                <Path Fill="black" HorizontalOptions="Fill" VerticalOptions="Fill" Aspect="UniformToFill" 
+                  Data="M615.59,178.35c-86.88,0-129.26-89.18-129.26-89.18S435.14,14,375,14,263.63,89.17,263.63,89.17s-42.2,89.18-129.26,89.18S0,0,0,0V200H750V0S702.61,178.35,615.59,178.35Z" />
+            </Grid>
+
+            <Button Grid.Row="3" Margin="20,0,0,0" FontFamily="Icons" BackgroundColor="red" HeightRequest="48" WidthRequest="48"
+                TextColor="Black" Text="£"
+                HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" Grid.Column="0" CornerRadius="24" />
+
+            <Button Grid.Row="3"   BackgroundColor="red" HeightRequest="64" WidthRequest="64"
+                 
+                HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" Grid.Column="1" CornerRadius="32" TextColor="Black"  Text="%"/>
+
+            <Button Grid.Row="3" Margin="0,0,20,0" FontFamily="Icons" BackgroundColor="red" HeightRequest="48" WidthRequest="48"
+                TextColor="Black" Text="$"
+                HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" Grid.Column="2" CornerRadius="24" />
+
+        </Grid>
+
+
+
+
+
+
+    </ContentPage>
+
+</TabbedPage>

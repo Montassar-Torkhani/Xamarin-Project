@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EXAMAN_TP.Profile.profil">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="20" ColumnDefinitions="*,*" ColumnSpacing="20" VerticalOptions="CenterAndExpand" Padding="30,0">
+            <!-- Title-->
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Welocome Montassar"  TextColor="White"/>
+
+
+
+            
+                
+
+                <!-- Rounded Profile imagen-->
+                <!--Frame Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Blue" VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="150" HeightRequest="150" CornerRadius="75" HasShadow="False" Padding="0" IsClippedToBounds="True">
+                    <Image Source="montapic.jpg" Aspect="AspectFill" />
+                </Frame-->
+
+
+            <Grid HorizontalOptions="Center" VerticalOptions="Start" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" WidthRequest="250" HeightRequest="250">
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Grid HeightRequest="300" WidthRequest="300"  HorizontalOptions="Center" VerticalOptions="Center">
+                        <Rectangle x:Name="mainRect" StrokeThickness="10" HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand">
+                            <Rectangle.Stroke>
+                                <LinearGradientBrush>
+                                    <GradientStop x:Name="tealGrad" Color="#56D9BE" Offset="0"/>
+                                    <GradientStop x:Name="orangeGrad" Color="#EE7752" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Stroke>
+                        </Rectangle>
+                        <Image Source="montapic.jpg" Aspect="AspectFill" Margin="10" HorizontalOptions="FillAndExpand" 
+                   VerticalOptions="FillAndExpand"/>
+                    </Grid>
+                   
+                </StackLayout>
+            </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- First name-->
+            <Label Grid.Row="2" Grid.Column="0" Text="Montassar Torkhani" TextColor="White" FontSize="15" />
+            <!-- Last name-->
+            <Label Grid.Row="3" Grid.Column="0" Text="TI Promo 6 : L3 DSI " TextColor="White" FontSize="12" />
+            <Label Grid.Row="3" Grid.Column="0"  Grid.ColumnSpan="2" Text="TI Promo 6 : L3 DSI                             Change Password" TextColor="White" FontSize="12"  />
+            <Button Text="PWD" TextColor="White" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#EE7752" HeightRequest="54" WidthRequest="58" CornerRadius="27" TranslationX="150"  HorizontalOptions="Center" VerticalOptions="End" Clicked="Pwd_Button_Clicked"/>
+            
+            <Button Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#40B9FE" Text="ISET RADES" TextColor="White" CornerRadius="60" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Clicked="Iset_Button_Clicked"/>
+            <Button Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#FE4C4C" Text="Super Market" TextColor="White" CornerRadius="60" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Clicked="Cars_Button_Clicked"/>
+            <Button Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#02c38e" Text="Cars" TextColor="White" CornerRadius="60" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Clicked="craousel_Button_Clicked" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

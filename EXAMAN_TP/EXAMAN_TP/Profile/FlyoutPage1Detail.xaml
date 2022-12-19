@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EXAMAN_TP.Profile.FlyoutPage1Detail"
+             Title="Menu"
+             BackgroundColor="#e4e4e4">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <!-- Main layout structure-->
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,*">
+                <!-- 1. Header -->
+                <!--Image Grid.Column="0" Grid.Row="0" Source="BookWormLogo" Margin="30,20,0,0"  HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start"/-->
+                
+                <!-- Main Image-->
+                <Image Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Source="WomenBG" TranslationY="60" VerticalOptions="Start" Aspect="AspectFit" HeightRequest="280"/>
+                <!-- Frame to achieve the gradient over the image-->
+                <Frame Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" TranslationY="65" HasShadow="False">
+                    <Frame.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="Transparent" Offset="0.6" />
+                            <GradientStop Color="#e4e4e4" Offset="0.9" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                </Frame>
+                <!-- 2. Description -->
+                <Label Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Text="Welcome To &#10;Our Store" Margin="25,-10,0,0" CharacterSpacing="3" FontAttributes="Bold" TextColor="#353f5f" FontSize="40"/>
+                <Label Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Text="World bestsellers, scientific worlds and simply entertaining literature."  FontSize="20" TextColor="#9196a6" Margin="25,20,0,35"/>
+
+                <!-- 3. Cards -->
+                <Frame Grid.Row="3"  BackgroundColor="#3bc4e0" Grid.Column="0" Margin="25,0,5,30" HasShadow="False" CornerRadius="20">
+                    <Label TextColor="White" VerticalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="80K+&#10;" FontAttributes="Bold" FontSize="33"/>
+                                <Span Text="Best of Products&#10;ever" FontSize="20"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Frame>
+                <Frame Grid.Row="3" Grid.Column="1" Margin="5,0,25,30" HasShadow="False" BackgroundColor="#fe6954" CornerRadius="20">
+                    <Label TextColor="White" VerticalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="32&#10;" FontAttributes="Bold" FontSize="33"/>
+                                <Span Text="New  Special&#10;Products" FontSize="20"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Frame>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+    
+    
+</ContentPage>

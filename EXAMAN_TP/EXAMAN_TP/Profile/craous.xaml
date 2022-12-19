@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EXAMAN_TP.Profile.craous"
+              Background="black">
+
+    <StackLayout>
+        <CarouselView x:Name="cars" 
+                      IndicatorView="iv">
+            <CarouselView.ItemTemplate >
+                <DataTemplate>
+
+                    <StackLayout>
+
+                       
+                            <StackLayout HorizontalOptions="Center"
+                                         VerticalOptions="CenterAndExpand">
+                                <Label Text="{Binding Name}"
+                                       FontSize="Large"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       FontAttributes="Bold"
+                                       TextColor="White"
+                                       Margin="10"/>
+
+                                <Image  Source="{Binding Image}"
+                                        Aspect="AspectFill"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="CenterAndExpand"
+                                        />
+                                
+                                 <Label Text="{Binding group}" Margin="15" HorizontalOptions="Center"
+                                />
+
+                        </StackLayout>
+                            
+                            
+                        
+                        
+                    </StackLayout>
+                    
+                </DataTemplate>
+               
+            </CarouselView.ItemTemplate>
+         
+        </CarouselView>
+        <IndicatorView x:Name="iv"
+                       Margin="-200"
+                      IndicatorColor="White"
+                           SelectedIndicatorColor="red"
+                           HorizontalOptions="Center"/>
+    </StackLayout>
+ 
+    
+    
+</ContentPage>
+
+<!--<ContentPage>
+        <StackLayout>
+           
+            <Label Text="car1111"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Image Source="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d35eacaf1176b0008974b54%2F0x0.jpg%3FcropX1%3D790%26cropX2%3D5350%26cropY1%3D784%26cropY2%3D3349"
+                      VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+
+            
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage>
+        <StackLayout>
+            <Label Text="car222"
+                   TextColor="Blue"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Image Source="https://cdn.motor1.com/images/mgl/RWr7g/s3/2021-genesis-essentia.webp" 
+                   class="d-block w-100"
+                   Aspect="AspectFill"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage>
+    <StackLayout>
+        <Label Text="car 3"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Image Source="https://cdn.motor1.com/images/mgl/V1V9R/s3/aston-martin-vanquish-vision-concept.jpg"  
+                   
+                   Aspect="AspectFill"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+
+     
+          
+          
+    </ContentPage>-->

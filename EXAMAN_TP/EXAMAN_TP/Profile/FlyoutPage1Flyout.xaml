@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EXAMAN_TP.Profile.FlyoutPage1Flyout"
+             Title="Flyout"
+             xmlns:CI="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
+    <StackLayout BackgroundColor="Black">
+    <ListView x:Name="MenuItemsListView"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemsSource="{Binding MenuItems}" >
+        
+      <ListView.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="30"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+                <Image Aspect="AspectFill"
+                Source="gr"
+                Grid.ColumnSpan="5"
+                Grid.RowSpan="4"
+                Opacity="0.6" />
+                <CI:CircleImage Source="montapic" HeightRequest="80" WidthRequest="80" 
+                Grid.Column="1" 
+                Grid.Row="1"
+                HorizontalOptions="Start"
+                VerticalOptions="End"/>
+
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Row="1" Margin="10,0,0,0"
+                Grid.Column="2" Grid.ColumnSpan="3" Orientation="Vertical">
+                    <Label
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"
+                TextColor="White"
+                Text="Montassar Torkhani"/>
+
+                    <Label 
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"
+                TextColor="White" Text="monta@gmail.com"/>
+                </StackLayout>
+                </Grid>
+          
+            </ListView.Header>
+
+        
+        
+            
+      <ListView.ItemTemplate  >
+                
+                    <DataTemplate >
+                    
+                        
+          <ViewCell >
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="33"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+                            
+                                <Image Source="{Binding Icon}" />
+                                
+                                <Label Text="{Binding Title}" 
+                                       TextColor="#40B9FE"
+                                       Grid.Column="1" FontSize="25" Margin="10" />
+                                
+                    </Grid>
+                        
+                    </ViewCell>
+        </DataTemplate>
+                
+            </ListView.ItemTemplate>
+           
+
+        </ListView>
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EXAMAN_TP.Profile.VoitureB"
+             BackgroundColor="#1C1D23">
+
+
+    <Grid BackgroundColor="#1C1D23">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+        <StackLayout
+            Grid.Column="1"
+            BackgroundColor="#222329"
+            VerticalOptions="FillAndExpand"
+            WidthRequest="110" 
+            />
+
+        <ScrollView Grid.ColumnSpan="2" Margin="0,30,0,30">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="318" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="130" />
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+                <StackLayout
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2"
+                    Margin="60,0,0,0"
+                    HorizontalOptions="FillAndExpand"
+                    Orientation="Horizontal"
+                    Spacing="20">
+
+                    <Label
+                        FontFamily="FontAbhayaLibreBold"
+                        FontSize="40"
+                        HorizontalOptions="FillAndExpand"
+                        Text="Compact Cars" />
+                    <Image
+                        Margin="0,0,40,0"
+                        Aspect="AspectFit"
+                        HorizontalOptions="EndAndExpand"
+                        Source="bell.png"
+                        VerticalOptions="Center" />
+                </StackLayout>
+             
+
+                <ScrollView
+                    Grid.Row="3"
+                    Grid.ColumnSpan="2"
+                    Margin="90,10,0,0"
+                    
+                    Orientation="Vertical">
+
+                </ScrollView>
+                <Label
+                    Grid.Row="4"
+                    Grid.ColumnSpan="2"
+                    Margin="30,10,0,8"
+                    FontFamily="FontBarlowBold"
+                    FontSize="21"
+                    Text="Recommend Brand" />
+                <CollectionView
+                    x:Name="liste"
+                    Grid.Row="5"
+                    Margin="0,0,-189,-150"
+                    EmptyView="No Products To Display"
+                   
+                    
+                    >
+                    <CollectionView.ItemsLayout>
+
+                        <GridItemsLayout 
+                            Orientation="Vertical"
+                            HorizontalItemSpacing="5"
+                            VerticalItemSpacing="5" 
+                            Span="2" ></GridItemsLayout>
+
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+
+                            <Grid>
+                                <Frame
+                                    Padding="10,5"
+                                    BackgroundColor="#313237"
+                                    CornerRadius="18"
+                                    HasShadow="False"
+                                    WidthRequest="155">
+
+
+
+
+
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto" />
+                                            <RowDefinition Height="auto" />
+                                            <RowDefinition Height="40" />
+                                            <RowDefinition Height="auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image
+                                            Grid.Row="0"
+                                            Grid.ColumnSpan="2"
+                                            Margin="0,0,0,0"
+                                            Aspect="AspectFit"
+                                            Source="{Binding ImageUri}" />
+                                        <StackLayout
+                                            Grid.Row="1"
+                                            Grid.ColumnSpan="2"
+                                            Margin="0,-25,0,0"
+                                            Orientation="Horizontal"
+                                            Spacing="2">
+
+                                            <Label Margin="0,20,0,0"
+                                                Grid.Row="3" 
+                                                Grid.Column="2"
+                                                FontSize="20"
+                                                
+                                                TextColor="Orange"
+                                                VerticalOptions="Center" 
+                                                HorizontalOptions="Center"
+                                                Text="{Binding Title}"/>
+                                        </StackLayout>
+                                        <Label
+                                                Grid.Row="2"
+                                                FontFamily="FontRobotoRegular"
+                                                FontSize="Micro"
+                                                Text="{Binding CodProd}" HorizontalOptions="FillAndExpand"
+                                                TextColor="Gray" />
+
+                                        <Label
+                                            Grid.Row="3"
+                                            Grid.ColumnSpan="2"
+                                            Margin="0,-25,0,8"
+                                            FontFamily="FontRobotoRegular"
+                                            FontSize="14"
+                                            HorizontalOptions="FillAndExpand"
+                                            LineBreakMode="WordWrap"
+                                            Text="{Binding Description}"
+                                            TextColor="White"/>
+                                        <StackLayout
+                                            Grid.Row="3"
+                                            Grid.Column="0"
+                                            HorizontalOptions="FillAndExpand"
+                                            Orientation="Horizontal"
+                                            VerticalOptions="Center">
+
+                                            <Label
+                                                Margin="70,0,0,0"
+                                                FontFamily="FontRobotoRegular"
+                                                FontSize="15"
+                                                HorizontalOptions="End"
+                                                Text="{Binding Price , StringFormat='${0:N2}' }"
+                                                TextColor="Orange" />
+                                        </StackLayout>
+
+
+
+                                    </Grid>
+
+                                </Frame>
+
+                            </Grid>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+
+
+
+
+
+
+            </Grid>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
