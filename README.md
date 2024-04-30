@@ -6,8 +6,8 @@ This Xamarin application is designed to streamline user authentication and produ
 
 **User Authentication:**
 
-* **Sign In:** Users can securely access their accounts through a designated sign-in process.
 * **Sign Up:** New users can register for an account to gain access to the application's features.
+* **Sign In:** Users can securely access their accounts through a designated sign-in process.
 
 **Administrator Authentication:**
 
@@ -24,3 +24,8 @@ This Xamarin application is designed to streamline user authentication and produ
 * **Xamarin:** This cross-platform development framework enables the creation of mobile applications for various platforms using a single codebase.
 * **C#:** The primary programming language employed to implement the application's logic and functionalities.
 * **SQLite:** This lightweight database management system is used to store user information and product data within the application.
+
+* **Sign Up:**
+![registre](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/4106646e-140c-4d86-adc4-03f737ed190b)
+
+* **Sign In:**
