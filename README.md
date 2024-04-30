@@ -39,11 +39,19 @@ This Xamarin application is designed to streamline user authentication and produ
 ![login](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/c922a7c4-0263-4ff9-bad8-cfd00b73bd51)
 
 
-**Home Page:**
+* **Home Page:**
+
 ![wlc store](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/f68275aa-60db-4891-ba1b-4936a3f609aa)
 ![windows](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/7d7d86ac-b60e-4e78-995b-b37ca7a6f723)
 ![home page](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/9b8a6429-4bbb-4ed6-8ace-5f2b5105e538)
 
-**Add Product:**
 
-**Edit/Remove Product Details:**
+* **Add Product:**
+
+![addProd](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/25cae83f-54ef-4f3a-9146-1da4c8510115)
+
+
+* **Edit/Remove Product Details:**
+  
+![del_Edit](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/77ee2fc3-b27f-499a-976c-95a019832582)
+![Update_prod](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/be293d3b-b0c1-43db-8dce-1cd47b5cdd79)
