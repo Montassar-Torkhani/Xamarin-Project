@@ -25,6 +25,15 @@ This Xamarin application is designed to streamline user authentication and produ
 * **C#:** The primary programming language employed to implement the application's logic and functionalities.
 * **SQLite:** This lightweight database management system is used to store user information and product data within the application.
 
+
+
+* **Screenshots:**
+
 * **Sign Up:**
+  
 ![registre](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/831335fd-c2f9-4075-82d8-6d1b0fec3f58 "width=125 height=90")
+
 * **Sign In:**
+
+![ptTarget](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/49df2cd9-3daf-4039-a009-10e518608109)
+![result_PPI](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/e47689e7-b8a3-4a93-9c35-7763a8b98971)
