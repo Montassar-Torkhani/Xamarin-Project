@@ -27,13 +27,13 @@ This Xamarin application is designed to streamline user authentication and produ
 
 
 
-* **Screenshots:**
+## Screenshots
 
 * **Sign Up:**
-  
-![registre](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/831335fd-c2f9-4075-82d8-6d1b0fec3f58 "width=125 height=90")
+![registre](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/29eb1bb8-7f55-461a-b001-005aec6e80c8)
+
 
 * **Sign In:**
+![sign in](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/23f2507a-cb61-42fe-bf9d-cadf28c92bf7)
+![login](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/c922a7c4-0263-4ff9-bad8-cfd00b73bd51)
 
-![ptTarget](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/49df2cd9-3daf-4039-a009-10e518608109)
-![result_PPI](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/e47689e7-b8a3-4a93-9c35-7763a8b98971)
