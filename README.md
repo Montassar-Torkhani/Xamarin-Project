@@ -26,6 +26,6 @@ This Xamarin application is designed to streamline user authentication and produ
 * **SQLite:** This lightweight database management system is used to store user information and product data within the application.
 
 * **Sign Up:**
-![registre](https://github.com/Montassar-Torkhani/Xamarin-Project/assets/97996083/4106646e-140c-4d86-adc4-03f737ed190b)
+![Registration Image](https://github.com/your-username/your-repository/raw/main/assets/registration.jpg "width=250 height=180")
 
 * **Sign In:**
